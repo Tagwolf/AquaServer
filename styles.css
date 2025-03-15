@@ -57,7 +57,6 @@ nav {
 
 .nav-links li {
     margin-left: 20px;
-    position: relative;
 }
 
 .nav-links a {
@@ -67,48 +66,6 @@ nav {
 
 .nav-links a:hover {
     color: #00ffcc;
-}
-
-.login-button {
-    background-color: #00ffcc;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.login-button:hover {
-    background-color: #00ccaa;
-}
-
-/* Dropdown-Menü */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    border-radius: 5px;
-    padding: 10px 0;
-    list-style: none;
-    z-index: 1000;
-}
-
-.dropdown-menu li {
-    padding: 10px 20px;
-}
-
-.dropdown-menu a {
-    color: #fff;
-    font-weight: normal;
-}
-
-.dropdown-menu a:hover {
-    color: #00ffcc;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 /* Hero-Bereich mit Video-Hintergrund */
@@ -161,20 +118,20 @@ nav {
     background-color: #00ccaa;
 }
 
-/* Features-Sektion */
-#features {
+/* Künstler-Sektion */
+#artists {
     padding: 60px 20px;
     text-align: center;
     background-color: #1a1a1a;
 }
 
-.feature-container {
+.artist-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.feature {
+.artist {
     width: 30%;
     padding: 20px;
     background-color: #333;
@@ -183,47 +140,102 @@ nav {
     transition: transform 0.3s ease;
 }
 
-.feature:hover {
+.artist:hover {
     transform: translateY(-10px);
 }
 
-.feature i {
-    font-size: 40px;
-    color: #00ffcc;
-    margin-bottom: 20px;
+.artist img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* Server-Seiten */
-.server-content {
+.artist h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.artist p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Releases-Sektion */
+#releases {
     padding: 60px 20px;
     text-align: center;
+    background-color: #0a0a0a;
 }
 
-.server-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.release-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.server-content p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.server-details {
-    background-color: #333;
+.release {
+    width: 30%;
     padding: 20px;
+    background-color: #333;
     border-radius: 10px;
-    margin: 0 auto;
-    max-width: 600px;
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
-.server-details ul {
-    list-style: none;
-    padding: 0;
+.release:hover {
+    transform: translateY(-10px);
 }
 
-.server-details ul li {
+.release img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.release h3 {
+    font-size: 24px;
     margin-bottom: 10px;
+}
+
+.release p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Events-Sektion */
+#events {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.event-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event {
+    width: 30%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+}
+
+.event h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 16px;
+    color: #ccc;
 }
 
 /* Footer */
@@ -263,7 +275,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .feature, .pricing-card {
+    .artist, .release, .event {
         width: 100%;
     }
 
@@ -273,16 +285,6 @@ footer {
 
     .hero p {
         font-size: 18px;
-    }
-
-    .dropdown-menu {
-        position: static;
-        display: none;
-        background-color: transparent;
-    }
-
-    .dropdown:hover .dropdown-menu {
-        display: block;
     }
 
     .footer-section {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaServer - Dein Server Hosting</title>
+    <title>AquaLabel - Dein Musiklabel</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,24 +13,16 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="AquaServer Logo">
-                <span>AquaServer</span>
+                <img src="logo.png" alt="AquaLabel Logo">
+                <span>AquaLabel</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Startseite</a></li>
-                <li class="dropdown">
-                    <a href="#servers">Server <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="root.html">Root-Server</a></li>
-                        <li><a href="mcserver.html">Mc-Server</a></li>
-                        <li><a href="minigames.html">Coming soon...</a></li>
-                        <li><a href="modded.html">Coming soon...</a></li>
-                    </ul>
-                </li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#artists">Künstler</a></li>
+                <li><a href="#releases">Releases</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="#about">Über uns</a></li>
                 <li><a href="#contact">Kontakt</a></li>
-                <li><a href="#login" class="login-button"><i class="fas fa-user"></i> Login</a></li>
             </ul>
         </nav>
     </header>
@@ -38,34 +30,99 @@
     <!-- Hero-Bereich mit Video-Hintergrund -->
     <div class="hero">
         <video autoplay muted loop id="video-background">
-            <source src="1093662-hd_1920_1080_30fps.mp4" type="video/mp4">
+            <source src="background-video.mp4" type="video/mp4">
             Dein Browser unterstützt das Video-Tag nicht.
         </video>
         <div class="hero-content">
-            <h1>Dein Minecraft Server. Einfach. Schnell. Leistungsstark.</h1>
-            <p>Erlebe das beste Minecraft-Server-Hosting mit modernster Technologie und 24/7 Support.</p>
-            <a href="#servers" class="cta-button">Server auswählen</a>
+            <h1>Willkommen bei AquaLabel</h1>
+            <p>Dein Zuhause für innovative Musik und talentierte Künstler.</p>
+            <a href="#artists" class="cta-button">Entdecke unsere Künstler</a>
         </div>
     </div>
 
-    <!-- Features-Sektion -->
-    <section id="features">
-        <h2>Unsere Features</h2>
-        <div class="feature-container">
-            <div class="feature">
-                <i class="fas fa-rocket"></i>
-                <h3>Höchste Performance</h3>
-                <p>Unsere Server bieten maximale Leistung für ein reibungsloses Spielerlebnis.</p>
+    <!-- Künstler-Sektion -->
+    <section id="artists">
+        <h2>Unsere Künstler</h2>
+        <div class="artist-container">
+            <div class="artist">
+                <img src="blackhell030.jpg" alt="Blackhell030">
+                <h3>Blackhell030</h3>
+                <p>Genre: Electronic</p>
             </div>
-            <div class="feature">
-                <i class="fas fa-shield-alt"></i>
-                <h3>DDoS-Schutz</h3>
-                <p>Dein Server ist vor Angriffen geschützt – rund um die Uhr.</p>
+            <div class="artist">
+                <img src="nightwolfLG.jpg" alt="NightwolfLG">
+                <h3>NightwolfLG</h3>
+                <p>Genre: Hip-Hop</p>
             </div>
-            <div class="feature">
-                <i class="fas fa-cogs"></i>
-                <h3>Einfache Verwaltung</h3>
-                <p>Verwalte deinen Server bequem über unser Dashboard.</p>
+            <div class="artist">
+                <img src="owana.jpg" alt="Owana">
+                <h3>Owana</h3>
+                <p>Genre: Pop</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Releases-Sektion mit YouTube-Videos -->
+    <section id="releases">
+        <h2>Neueste Releases</h2>
+        <div class="release-container">
+            <div class="release">
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/watch?v=LBtMkmG6K4g"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <h3>Release von Blackhell030</h3>
+            </div>
+            <div class="release">
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID_2"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <h3>Release von NightwolfLG</h3>
+            </div>
+            <div class="release">
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID_3"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <h3>Release von Owana</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events-Sektion -->
+    <section id="events">
+        <h2>Kommende Events</h2>
+        <div class="event-container">
+            <div class="event">
+                <h3>Event 1</h3>
+                <p>Datum: 01.01.2024</p>
+                <p>Ort: Berlin</p>
+            </div>
+            <div class="event">
+                <h3>Event 2</h3>
+                <p>Datum: 15.02.2024</p>
+                <p>Ort: Hamburg</p>
+            </div>
+            <div class="event">
+                <h3>Event 3</h3>
+                <p>Datum: 30.03.2024</p>
+                <p>Ort: München</p>
             </div>
         </div>
     </section>
@@ -75,24 +132,24 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Über uns</h3>
-                <p>AquaServer bietet hochwertiges Minecraft-Server-Hosting mit modernster Technologie und exzellentem Support.</p>
+                <p>AquaLabel ist ein innovatives Musiklabel, das talentierte Künstler und einzigartige Sounds fördert.</p>
             </div>
             <div class="footer-section">
                 <h3>Kontakt</h3>
-                <p>Email: support@aquaserver.de</p>
+                <p>Email: info@aqualabel.de</p>
                 <p>Telefon: +49 123 456789</p>
             </div>
             <div class="footer-section">
                 <h3>Folge uns</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 AquaServer. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2023 AquaLabel. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 </body>

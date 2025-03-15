@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaServer - Professionelles Hosting</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AquaServer - Dein Minecraft Server Hosting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
     <!-- Header mit Navigation -->
     <header>
-        <div class="logo">
-            🌊 AquaServer
-        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="minecraft.html">Minecraft Server</a></li>
-                <li><a href="vps.html">vServer</a></li>
-                <li><a href="dedicated.html">Dedicated Server</a></li>
-                <li><a href="https://discord.gg/eQT6KxxfsY">Support</a></li>
+            <div class="logo">
+                <img src="logo.png" alt="AquaServer Logo">
+                <span>AquaServer</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li class="dropdown">
+                    <a href="#servers">Server <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="root.html">Root-Server</a></li>
+                        <li><a href="mcserver.html">MC-Server</a></li>
+                        <li><a href="minigames.html">Coming soon..</a></li>
+                        <li><a href="modded.html">Coming soon...</a></li>
+                    </ul>
+                </li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#login" class="login-button"><i class="fas fa-user"></i> Login</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>Dein Minecraft Server. Einfach. Schnell. Leistungsstark.</h1>
+            <p>Erlebe das beste Minecraft-Server-Hosting mit modernster Technologie und 24/7 Support.</p>
+            <a href="#servers" class="cta-button">Server auswählen</a>
+        </div>
     </header>
 
-    <!-- Hauptinhalt mit Willkommensbereich -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Willkommen bei AquaServer</h1>
-            <p>Hochwertiges und leistungsstarkes Server-Hosting für Gamer, Unternehmen und Entwickler.</p>
-            <a href="minecraft.html" class="cta-button">Jetzt loslegen!</a>
+    <!-- Features-Sektion -->
+    <section id="features">
+        <h2>Unsere Features</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <i class="fas fa-rocket"></i>
+                <h3>Höchste Performance</h3>
+                <p>Unsere Server bieten maximale Leistung für ein reibungsloses Spielerlebnis.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>DDoS-Schutz</h3>
+                <p>Dein Server ist vor Angriffen geschützt – rund um die Uhr.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-cogs"></i>
+                <h3>Einfache Verwaltung</h3>
+                <p>Verwalte deinen Server bequem über unser Dashboard.</p>
+            </div>
         </div>
     </section>
-
-    <!-- Button-Bereich -->
-    <section class="server-options">
-        <div class="button-grid">
-            <a href="minecraft.html" class="welcome-button">
-                <i class="fas fa-cube"></i> Minecraft Server
-            </a>
-            <a href="vps.html" class="welcome-button">
-                <i class="fas fa-server"></i> vServer (VPS)
-            </a>
-            <a href="dedicated.html" class="welcome-button">
-                <i class="fas fa-hdd"></i> Dedicated Server
-            </a>
-        </div>
-    </section>
-
-    <!-- Wassereffekt -->
-    <div class="wave-container">
-        <div class="wave"></div>
-    </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 AquaServer. Alle Rechte vorbehalten.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Über uns</h3>
+                <p>AquaServer bietet hochwertiges Minecraft-Server-Hosting mit modernster Technologie und exzellentem Support.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Email: support@aquaserver.de</p>
+                <p>Telefon: +49 123 456789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Folge uns</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 AquaServer. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 </body>
-
 </html>

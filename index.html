@@ -1,156 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaLabel - Dein Musiklabel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AuroraCasino_CBE – Comeback Event</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #0f0f1a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: url('dein-hintergrundbild.jpg') center center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      color: #ffd700;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section h2 {
+      color: #00ffff;
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      background-color: #ffd700;
+      color: #111;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+    .btn-custom:hover {
+      background-color: #e6c200;
+      color: #111;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header mit Navigation -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="AquaLabel Logo">
-                <span>AquaLabel</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="#artists">Künstler</a></li>
-                <li><a href="#releases">Releases</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#about">Über uns</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero-Bereich mit Video-Hintergrund -->
-    <div class="hero">
-        <video autoplay muted loop id="video-background">
-            <source src="1093662-hd_1920_1080_30fps.mp4" type="video/mp4">
-            Dein Browser unterstützt das Video-Tag nicht.
-        </video>
-        <div class="hero-content">
-            <h1>Willkommen bei AquaLabel</h1>
-            <p>Dein Zuhause für innovative Musik und talentierte Künstler.</p>
-            <a href="#artists" class="cta-button">Entdecke unsere Künstler</a>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>AuroraCasino_CBE</h1>
+      <p class="lead">Das große Comeback – <strong>09.05.2025 – 15:00 Uhr</strong></p>
     </div>
+  </section>
 
-    <!-- Künstler-Sektion -->
-    <section id="artists">
-        <h2>Unsere Künstler</h2>
-        <div class="artist-container">
-            <div class="artist">
-                <img src="blackhell030.jpg" alt="Blackhell030">
-                <h3>Blackhell030</h3>
-                <p>Genre: Electronic</p>
-            </div>
-            <div class="artist">
-                <img src="nightwolfLG.jpg" alt="NightwolfLG">
-                <h3>NightwolfLG</h3>
-                <p>Genre: Hip-Hop</p>
-            </div>
-            <div class="artist">
-                <img src="owana.jpg" alt="Owana">
-                <h3>Owana</h3>
-                <p>Genre: Pop</p>
-            </div>
-        </div>
-    </section>
+  <!-- Event Details Section -->
+  <section class="section bg-dark">
+    <div class="container">
+      <h2 class="text-center">Was euch erwartet</h2>
+      <ul>
+        <li>🎰 16 funkelnde Slots mit satten Preisen</li>
+        <li><strong>‼ Hauptgewinne bis zu 50.000.000$ ‼</strong></li>
+        <li>Keine Coins nötig – spielt direkt los!</li>
+        <li>Direkter Verkauf & Auszahlung ohne Wartezeit</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Releases-Sektion mit YouTube-Videos -->
-    <section id="releases">
-        <h2>Neueste Releases</h2>
-        <div class="release-container">
-            <div class="release">
-                <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/watch?v=LBtMkmG6K4g"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <h3>Release von Blackhell030</h3>
-            </div>
-            <div class="release">
-                <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID_2"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <h3>Release von NightwolfLG</h3>
-            </div>
-            <div class="release">
-                <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID_3"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <h3>Release von Owana</h3>
-            </div>
-        </div>
-    </section>
+  <!-- Gewinne Section -->
+  <section class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">Gewinne im Eventzeitraum</h2>
+      <ul>
+        <li><strong>1. Platz:</strong> Merch Crown</li>
+        <li><strong>2. Platz:</strong> Klinge von GrafBonze 2018</li>
+        <li><strong>3. Platz:</strong> 15.000.000 $ Bargeld</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Events-Sektion -->
-    <section id="events">
-        <h2>Kommende Events</h2>
-        <div class="event-container">
-            <div class="event">
-                <h3>Event 1</h3>
-                <p>Datum: 01.01.2024</p>
-                <p>Ort: Berlin</p>
-            </div>
-            <div class="event">
-                <h3>Event 2</h3>
-                <p>Datum: 15.02.2024</p>
-                <p>Ort: Hamburg</p>
-            </div>
-            <div class="event">
-                <h3>Event 3</h3>
-                <p>Datum: 30.03.2024</p>
-                <p>Ort: München</p>
-            </div>
-        </div>
-    </section>
+  <!-- Teilnahme Section -->
+  <section class="section bg-dark">
+    <div class="container">
+      <h2 class="text-center">So funktioniert's</h2>
+      <p>Spiele an einem beliebigen Slot – jeder Knall (HGW) bringt dir ein Los!</p>
+      <p>Insgesamt <strong>100 Lose</strong> werden vergeben. Die Ziehung erfolgt live auf Twitch. Das Gewinnerlos muss danach bei einem Owner eingelöst werden.</p>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Über uns</h3>
-                <p>AquaLabel ist ein innovatives Musiklabel, das talentierte Künstler und einzigartige Sounds fördert.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Email: info@aqualabel.de</p>
-                <p>Telefon: +49 123 456789</p>
-            </div>
-            <div class="footer-section">
-                <h3>Folge uns</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-spotify"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 AquaLabel. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
+  <!-- Forum Verlosung Section -->
+  <section class="section bg-secondary">
+    <div class="container text-center">
+      <h2>Verlosung im Forum</h2>
+      <p>Unter <a href="https://forum.griefergames.de/forum/thread/477605-aurora-casino-cbe-comeback-09-05-2025-15-00-100m-event/?postID=4505344#post4505344" target="_blank">diesem Beitrag</a> verlosen wir <strong>3× 2.500.000$</strong> an aktive Forum-User!</p>
+      <p>Markiere drei Freunde und schon bist du im Lostopf!</p>
+    </div>
+  </section>
+
+  <!-- Discord Section -->
+  <section class="section bg-dark">
+    <div class="container text-center">
+      <h2>Discord & Socials</h2>
+      <p>Alle Gewinner werden auch auf unserem Discord bekannt gegeben:</p>
+      <p><a href="https://discord.gg/a7ZaUTqq8b" target="_blank" class="btn btn-custom">Discord beitreten</a></p>
+      <p>Folge uns auf @tusk & @JxstMakea</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
